@@ -55,11 +55,6 @@ else()
 	add_definitions(-D_X86_)
 endif()
 
-include(CMakePrintHelpers)
-cmake_print_variables(COMPILE_FLAGS_RELEASE)
-cmake_print_variables(COMPILE_FLAGS_RELWITHDEBINFO)
-cmake_print_variables(COMPILE_FLAGS_DEBUG)
-
 set(CMAKE_CXX_FLAGS_RELEASE "${COMPILE_FLAGS_RELEASE}")
 set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "${COMPILE_FLAGS_RELWITHDEBINFO}")
 set(CMAKE_CXX_FLAGS_DEBUG "${COMPILE_FLAGS_DEBUG}")
